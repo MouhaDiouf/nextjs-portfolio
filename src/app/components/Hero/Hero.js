@@ -24,7 +24,7 @@ function Hero() {
             <div className={HeroStyles.typewriter}>
                 <h3 className={HeroAnimation.title}>I build things for the web</h3>
             </div>
-            <p className={HeroStyles.description}>I'm a full-stack developer based in Dakar, Senegal. In specialize in building websites and web applications.</p>
+            <p className={HeroStyles.description}>I am a full-stack developer based in Dakar, Senegal. In specialize in building websites and web applications.</p>
             <button className={HeroStyles.ctaBtn} onClick={() => scrollTo(".contact")}>
                 Get In Touch
             </button>
