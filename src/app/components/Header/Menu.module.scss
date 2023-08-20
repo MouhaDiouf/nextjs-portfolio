@@ -1,0 +1,101 @@
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100, 255, 218);
+$navy: rgb(10, 25, 47);
+
+.iconContainer {
+    height: 50px;
+    width: 50px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+
+    &.navScroll {
+        background-color: $navy;
+    }
+}
+
+.navIcon {
+    width: 40px;
+    height: 3px;
+    background-color: $lightgrey;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin-left: 15px;
+    &.open {
+        transform: translateX(-20px);
+        background-color: transparent;
+    }
+}
+
+.navIcon::before,
+.navIcon::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: $lightgrey;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.navIcon::before {
+    transform: translateY(-13px);
+}
+
+.navIcon.open::before {
+    transform: rotate(45deg) translate(13px, -13px);
+    background-color: $lightgreen;
+}
+
+.navIcon::after {
+    transform: translateY(13px);
+}
+
+.navIcon.open::after {
+    transform: rotate(-45deg) translate(13px, 13px);
+    background-color: $lightgreen;
+}
+
+.mobileNav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    opacity: 0.89;
+    position: fixed;
+    margin: 0;
+    right: 0;
+    padding: 0;
+    width: 250px;
+    z-index: 2;
+    transform: translateX(300px);
+    transition: all 0.6s ease-in-out;
+    list-style-type: none;
+
+    li {
+        margin: 20px auto;
+    }
+    li a {
+        text-decoration: none;
+        color: $lightgreen;
+    }
+    &.show {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 770px) {
+    .iconContainer {
+        display: flex;
+        justify-content: left;
+    }
+    .mobileNav {
+        display: flex;
+    }
+}

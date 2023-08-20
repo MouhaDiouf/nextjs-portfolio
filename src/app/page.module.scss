@@ -1,0 +1,21 @@
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100, 255, 218);
+$darkergray: rgb(136, 146, 176);
+$navy: rgb(10, 25, 47);
+
+.loading {
+    font-size: 100px;
+    color: $lightgreen;
+}
+
+.ballsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}

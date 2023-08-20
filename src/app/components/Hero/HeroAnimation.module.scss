@@ -1,0 +1,29 @@
+$lightgreen: rgb(100, 255, 218);
+
+.title {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid $lightgreen;
+    width: 22ch;
+    animation: type 3s steps(26), blink-caret 1s step-end infinite;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 20ch;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: $lightgreen;
+    }
+}

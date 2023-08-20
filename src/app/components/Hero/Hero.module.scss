@@ -1,0 +1,115 @@
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100, 255, 218);
+$darkergray: rgb(136, 146, 176);
+$navy: rgb(10, 25, 47);
+
+.appHero {
+    color: $lightgrey;
+    padding: 0px 150px;
+    height: 100vh;
+    h1,
+    h2,
+    p {
+        margin: 20px auto;
+    }
+
+    button {
+        background-color: $navy;
+    }
+
+    h1 {
+        font-size: 16px;
+        color: $lightgreen;
+    }
+    h2 {
+        color: $darkergray;
+        font-size: 6vw;
+    }
+    h3 {
+        color: $lightgrey;
+        font-size: 5.5vw;
+    }
+
+    .description {
+        color: $lightgrey;
+        font-size: 20px;
+    }
+
+    .ctaBtn {
+        color: $lightgreen;
+        border: 1px solid $lightgreen;
+        font-size: 20px;
+        padding: 20px 10px;
+        border-radius: 6px;
+        margin-top: 20px;
+        font-family: "Source Code Pro", monospace;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .ctaBtn:hover {
+        background-color: $lightgreen;
+        color: $navy;
+    }
+
+    .animation {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            display: inline;
+            margin: 0;
+        }
+        span {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .appHero {
+        padding: 100px 20px;
+
+        h2 {
+            font-size: 7vw;
+        }
+
+        h2 {
+            font-size: 8vw;
+        }
+    }
+}
+
+/* DEMO-SPECIFIC STYLES */
+// .typewriter {
+//     display: inline-block;
+// }
+// .typewriter h3 {
+//     display: inline-block;
+//     overflow: hidden; /* Ensures the content is not revealed until the animation */
+//     border-right: .1em solid $lightgreen; /* The typwriter cursor */
+//     white-space: wrap; /* Keeps the content on a single line */
+//     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//     letter-spacing: .15em; /* Adjust as needed */
+//     animation:
+//       typing 4s steps(30, end),
+//       blink-caret 1.5s step-end infinite;
+
+//   }
+
+//   /* The typing effect */
+//   @keyframes typing {
+//     from { width: 0 }
+//     to { width: 100% }
+//   }
+
+//   /* The typewriter cursor effect */
+//   @keyframes blink-caret {
+//     from, to { border-color: transparent }
+//     50% { border-color: $lightgreen }
+//   }

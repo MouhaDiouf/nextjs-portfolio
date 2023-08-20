@@ -1,0 +1,102 @@
+$light-navy: #172a45;
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100, 255, 218);
+$darkergray: rgb(136, 146, 176);
+
+.projectContainer {
+    display: flex !important;
+    position: relative;
+    margin-bottom: 100px;
+    align-items: center;
+
+    .imageContainer {
+        flex: 0.5;
+        img {
+            width: 100%;
+            border-radius: 10px;
+            height: 250px;
+            object-fit: contain;
+        }
+    }
+    .textContainer {
+        flex: 0.5;
+        top: 0;
+        right: 0;
+        right: 0;
+        position: relative;
+        text-align: center;
+
+        h3 {
+            font-size: 20px;
+        }
+        span {
+            color: $lightgreen;
+            display: block;
+        }
+        p {
+            position: relative;
+            left: -40%;
+            background: $light-navy;
+            color: $lightgrey;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 17px;
+            width: 300px;
+            margin: 30px auto;
+            font-family: "Source Code Pro", monospace;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        padding: 0 20px;
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: $lightgrey;
+
+            &:hover {
+                color: $lightgreen;
+            }
+        }
+    }
+
+    .technologies {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 10px;
+        flex-wrap: wrap;
+
+        span {
+            color: $darkergray;
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .projectContainer {
+        display: block;
+
+        .textContainer {
+            h3 {
+                margin: 10px auto;
+            }
+            span {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+            p {
+                position: static;
+                margin: 20px auto;
+                text-align: center;
+                width: 90%;
+                font-size: 15px;
+            }
+        }
+    }
+}
