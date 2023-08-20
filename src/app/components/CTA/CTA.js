@@ -1,15 +1,14 @@
-import React from "react"
-import CTAStyles from "./cta.module.scss"
+import React from "react";
+import CTAStyles from "./cta.module.scss";
 function CTA() {
-  return (
-    <div className={CTAStyles.container}>
-      <h2 className="contact">Want To Work With Me?</h2>
-      <p>
-        I am looking for opportunities.{" "}
-        <a href="mailto:mouhamadoudioufsn@gmail.com">Let's work together</a>
-      </p>
-    </div>
-  )
+    return (
+        <div className={CTAStyles.container}>
+            <h2 className="contact">Want To Work With Me?</h2>
+            <p>
+                I am looking for opportunities. <a href="mailto:mouhamadoudioufsn@gmail.com">Let us work together</a>
+            </p>
+        </div>
+    );
 }
 
-export default CTA
+export default CTA;
