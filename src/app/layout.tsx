@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Mouhamadou Diouf's Portfolio",
+    title: "Mo's Portfolio",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

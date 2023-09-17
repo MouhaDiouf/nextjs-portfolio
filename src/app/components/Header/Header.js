@@ -32,7 +32,7 @@ function Header() {
             </div>
             <nav className={headerStyles.nav}>
                 <h1>
-                    <Link href="/">Mouha Diouf</Link>
+                    <Link href="/">Mo Diouf</Link>
                 </h1>
                 <ul className={headerStyles.leftNavigation}>
                     <li>

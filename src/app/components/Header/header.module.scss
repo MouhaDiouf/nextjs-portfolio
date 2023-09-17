@@ -4,11 +4,11 @@ $lightgreen: rgb(100, 255, 218);
 .leftNavigation {
     color: $lightgrey;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 0.4;
+    // justify-content: space-between;
+    justify-content: flex-end;
+    flex: 0.3;
     list-style-type: none;
-
+    gap: 20px;
     .resumeLink {
         color: $lightgreen;
         border: 1px solid $lightgreen;
@@ -33,7 +33,7 @@ $lightgreen: rgb(100, 255, 218);
     align-items: center;
     padding: 0px 50px;
     height: 60px;
-    margin-bottom: 100px;
+    max-width: 1500px;
 
     h1 a {
         color: $lightgrey;

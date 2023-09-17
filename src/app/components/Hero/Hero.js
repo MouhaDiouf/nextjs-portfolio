@@ -20,11 +20,11 @@ function Hero() {
     return (
         <div className={HeroStyles.appHero}>
             <h1>Hello, I am</h1>
-            <h2>Mouhamadou Diouf</h2>
+            <h2>Mo</h2>
             <div className={HeroStyles.typewriter}>
                 <h3 className={HeroAnimation.title}>I build things for the web</h3>
             </div>
-            <p className={HeroStyles.description}>I am a full-stack developer based in Dakar, Senegal. In specialize in building websites and web applications.</p>
+            <p className={HeroStyles.description}>I am a full-stack developer based in Senegal. In specialize in building websites and web applications.</p>
             <button className={HeroStyles.ctaBtn} onClick={() => scrollTo(".contact")}>
                 Get In Touch
             </button>

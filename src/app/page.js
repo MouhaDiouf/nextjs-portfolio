@@ -33,7 +33,7 @@ export default function Home() {
             <FadeIn>
                 <Layout>
                     <meta charSet="utf-8" />
-                    <title>Mouhamadou | Full-Stack Developer</title>
+                    <title> Mo Diouf | Full-Stack Developer</title>
                     <div className="app">
                         <div className="app-container">
                             <Hero />
